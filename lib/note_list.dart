@@ -62,7 +62,7 @@ class NoteList extends StatelessWidget {
                       ],
                     ),
                     SizedBox(
-                      height: 5,
+                      height: 6,
                     ),
                     Text(
                       _noteController.noteModelList[index].note,
