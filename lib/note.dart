@@ -15,6 +15,21 @@ class Note extends StatefulWidget {
 
 class _NoteState extends State<Note> {
   int count_word = 0;
+  //
+  // DateTime selectedDate = DateTime.now();
+  //
+  // Future<void> _selectDate(BuildContext context) async {
+  //   final DateTime picked = await showDatePicker(
+  //       context: context,
+  //       initialDate: selectedDate,
+  //       firstDate: DateTime(2015, 8),
+  //       lastDate: DateTime(2101));
+  //   if (picked != null && picked != selectedDate)
+  //     setState(() {
+  //       selectedDate = picked;
+  //     });
+  // }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,7 +56,6 @@ class _NoteState extends State<Note> {
               TextField(
                 autofocus: true,
                 controller: _noteController.titleTextController,
-
                 decoration: InputDecoration(
                   hintText: 'Input title',
                   hintStyle: TextStyle(
@@ -63,6 +77,14 @@ class _NoteState extends State<Note> {
                   ],
                 ),
               ),
+              // Text("${selectedDate.toLocal()}".split(' ')[0]),
+              // SizedBox(
+              //   height: 20.0,
+              // ),
+              // RaisedButton(
+              //   onPressed: () => _selectDate(context),
+              //   child: Text('Select date'),
+              // ),
               TextField(
                 controller: _noteController.noteTextController,
                 decoration: InputDecoration(
