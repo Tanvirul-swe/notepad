@@ -32,7 +32,7 @@ class NoteList extends StatelessWidget {
           ChangeThemeButtonWidget(),
         ],
         title: Text(
-          'Notes',
+          'To-Do List',
         ),
       ),
       body: Container(

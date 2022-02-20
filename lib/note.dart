@@ -87,6 +87,12 @@ class _NoteState extends State<Note> {
               // ),
               TextField(
                 controller: _noteController.noteTextController,
+                onChanged: (value){
+                 setState(() {
+                   count_word = value.split(' ').length;
+
+                 });
+                },
                 decoration: InputDecoration(
                   hintText: 'Describe',
                 ),
